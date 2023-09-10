@@ -43,6 +43,9 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- Manage Buffers
+    ["<leader>x"] = { function() require("astronvim.utils.buffer").close() end, desc = "Close buffer" },
+    ["<leader>X"] = { function() require("astronvim.utils.buffer").close(0, true) end, desc = "Force close buffer" },
   },
   t = {
     -- setting a mapping to false will disable it
