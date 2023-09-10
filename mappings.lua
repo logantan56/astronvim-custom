@@ -11,10 +11,10 @@ return {
     ["<C-e>"] = { "<End>", desc = "End of line" },
 
     -- navigate within insert mode
-  ["<C-h>"] = { "<Left>", desc = "Move left" },
-  ["<C-l>"] = { "<Right>", desc = "Move right" },
-   ["<C-j>"] = { "<Down>", desc =  "Move down" },
-   ["<C-k>"] = { "<Up>", desc = "Move up" },
+    ["<C-h>"] = { "<Left>", desc = "Move left" },
+    ["<C-l>"] = { "<Right>", desc = "Move right" },
+    ["<C-j>"] = { "<Down>", desc =  "Move down" },
+    ["<C-k>"] = { "<Up>", desc = "Move up" },
   },
   n = {
     -- second key is the lefthand side of the map
@@ -33,7 +33,7 @@ return {
     ["<leader>bD"] = {
       function()
         require("astronvim.utils.status").heirline.buffer_picker(
-          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
         )
       end,
       desc = "Pick to close",
