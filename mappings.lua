@@ -46,6 +46,8 @@ return {
     -- Manage Buffers
     ["<leader>x"] = { function() require("astronvim.utils.buffer").close() end, desc = "Close buffer" },
     ["<leader>X"] = { function() require("astronvim.utils.buffer").close(0, true) end, desc = "Force close buffer" },
+    ["<leader>c"] = false,
+    ["<leader>C"] = false,
   },
   t = {
     -- setting a mapping to false will disable it
