@@ -31,9 +31,10 @@ return {
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
+        enabled = false, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          -- "go",
+          "go",
+          "rust",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -60,7 +61,7 @@ return {
     performance = {
       rtp = {
         -- customize default disabled vim plugins
-        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
+        -- disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
   },
