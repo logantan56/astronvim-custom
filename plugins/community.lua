@@ -6,6 +6,7 @@ return {
 
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.java" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  -- { import = "astrocommunity.colorscheme.rose-pine" },
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.colorscheme.gruvbox-baby" },
 }
