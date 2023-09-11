@@ -43,20 +43,8 @@ return {
     lazy = false,
   },
   {
-    "svrana/neosolarized.nvim",
-    priority = 1000,
-    name = "neosolarized",
+    "Tsuzat/NeoSolarized.nvim",
     lazy = false,
-    dependencies = {
-      "tjdevries/colorbuddy.vim",
-    },
-    opts = {
-      comment_italics = true,
-      background_set = true,
-    },
-    config = function(_, opts)
-      require("neosolarized").setup(opts)
-    end,
   },
   {
     "rcarriga/nvim-notify",
