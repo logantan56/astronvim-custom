@@ -14,29 +14,33 @@ return {
     name = "catppuccin",
     lazy = false,
     opts = {
+      transparent_background = true,
+      term_colors = true, -- sets terminal colors (e.g. `g:terminal_color_0`)
       integrations = {
-        sandwich = false,
+        notify = false,
         noice = true,
         mini = true,
         leap = true,
         markdown = true,
         neotest = true,
+        neotree = true,
         cmp = true,
         overseer = true,
         lsp_trouble = true,
         rainbow_delimiters = true,
       },
+      dim_inactive = {
+        enabled = false, -- dims the background color of inactive window
+        shade = "dark",
+        percentage = 0.15, -- percentage of the shade to apply to the inactive window
+      },
     },
-    config = function(_, opts)
-      require("catppuccin").setup(opts)
-    end,
+    config = function(_, opts) require("catppuccin").setup(opts) end,
   },
   {
     "rose-pine/neovim",
     lazy = false,
-    config = function(_, opts)
-      require("rose-pine").setup(opts)
-    end,
+    config = function(_, opts) require("rose-pine").setup(opts) end,
   },
   {
     "luisiacc/gruvbox-baby",
@@ -49,7 +53,7 @@ return {
   {
     "rcarriga/nvim-notify",
     opts = {
-      background_colour = "#000000"
-    }
+      background_colour = "#000000",
+    },
   },
 }
